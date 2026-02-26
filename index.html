@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>jsonpeek – quick JSON viewer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>jsonpeek</h1>
+    <p>Drag & drop a JSON file here or paste below</p>
+
+    <div id="drop-zone" class="drop-zone">
+      Drop JSON file here
+    </div>
+
+    <textarea id="json-input" placeholder="...or paste your JSON here"></textarea>
+
+    <div id="output" class="output hidden">
+      <div class="toolbar">
+        <button id="copy-full">Copy full JSON</button>
+        <button id="expand-all">Expand all</button>
+        <button id="collapse-all">Collapse all</button>
+        <span id="stats"></span>
+      </div>
+      <pre id="json-view"></pre>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
